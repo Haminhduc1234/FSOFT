@@ -1,0 +1,50 @@
+.container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border: 1px solid black;
+}
+.img__container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+.title__container {
+    background: linear-gradient(to right, #0051ff 0%, #4edd4c 100%);
+    color: white;
+    width: 70%;
+}
+.img__item {
+    border: 1px solid black;
+    width: 20%;
+    height: 100%;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.btn-group {
+    text-align: center;
+    margin-top: 50px;
+}
+.generate__Image {
+    outline: none;
+    border: none;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(174,188,191,1) 0%,rgb(37, 95, 157) 30%,rgb(41, 143, 41) 50%,rgb(151, 57, 104) 100%);
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Your first HTML form, styled</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <header class="header">
+        <h1 class="text-center">FA Survey Form</h1>
+        <p class="description text-center">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required />
+      </div>
+      <!-- Email  -->
+      <div class="form-group">
+        <label for="name">Email</label>
+        <input type="email" name="name" id="name" class="form-control" placeholder="Enter your email" required />
+      </div>
+      <!-- Age -->
+      <div class="form-group">
+        <label for="name">Age</label>
+        <input type="text" name="name" id="name" class="form-control" placeholder="Age" required />
+      </div class="form-group">
+      <!-- Current role -->
+      <div class="form-group">
+        <label for="planSelect">Which option best description your current role?</label><br>
+        <select name="plan" id="planSelect" class="form-control">
+          <option value="" selected>--Please choose an option--</option>
+          <option value="FE">FE</option>
+          <option value="Net">.Net </option>
+          <option value="NodeJs">NodeJs</option>
+          <option value="CC++">C/C++</option>
+        </select>
+      </div>
+
+      <!-- Recommend to friend -->
+      <div class="form-group">
+        <label for="">Would you recommend FA to a frend ?</label><br>
+        <input class="input-radio" type="radio" id="Definitiely" name="" value="">
+        <label for="Definitiely">Definitiely</label><br>
+        <input  class="input-radio" type="radio" id="Maybe" name="" value="">
+        <label for="Maybe">Maybe</label><br>
+        <input  class="input-radio" type="radio" id="notSure" name="" value="">
+        <label for="notSure">Not sure</label><br>
+      </div>
+      <!-- What would you like to see improved -->
+      <div class="form-group">
+        <label for="">What would you like to see improved? </label><br>
+        <input class="input-checkbox" type="checkbox" id="FE" name="FE" value="FE" required >
+        <label for="FE">Front-end Projects</label><br>
+        <input class="input-checkbox" type="checkbox" id="BE" name="BE" value="BE" required>
+        <label for="BE">Front-end Projects</label><br>
+        <input class="input-checkbox" type="checkbox" id="AI" name="AI" value="AI" required>
+        <label for="AI">AI</label><br>
+        <input class="input-checkbox" type="checkbox" id="ML" name="ML" value="ML" required>
+        <label for="ML">Machine Learning</label><br>
+        <input class="input-checkbox" type="checkbox" id="softSkills" name="softSkills" value="softSkills" required>
+        <label for="softSkills">Soft Skills</label><br>
+        <input class="input-checkbox" type="checkbox" id="presentationSkills" name="presentationSkills" value="presentationSkills" required>
+        <label for="presentationSkills">Presetation Skill</label><br>
+      </div>
+
+      <!-- Suggestions -->
+      <div class="form-group">
+        <p><label for="w3review">Any comments or suggestions</label></p>
+        <textarea  class="input-textarea" id="w3review" name="w3review" rows="4"
+          cols="50">Enter your comment here...</textarea>
+        <br>
+      </div>
+        <!-- Submit-button -->
+      <input class="submit-button" type="submit" value="Submit">
+    </form>
+
+  </div>
+</body>
+
+</html>

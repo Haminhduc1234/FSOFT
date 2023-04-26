@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    scroll-margin-top: 80px;
+}
+
+.container.active__container {
+    opacity: 1;
+    z-index: 5;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background-color: rgb(184, 179, 179);
+    box-shadow: 0 2px 5px 0 rgba(51, 62, 73, 0.1);
+    opacity: 0;
+}
+
+.quiz__container {
+    display: flex;
+    width: 100%;
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 60px;
+
+}
+
+.title__container {
+    background: linear-gradient(to right, #0051ff 0%, #4edd4c 100%);
+    color: white;
+    width: 70%;
+}
+
+.quiz__item {
+    border: 1px solid black;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+h1 {
+    font-size: 20px;
+}
+.btn-group {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hide {
+    display: none;
+}
+.start__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+    border: none;
+    padding: 20px 60px;
+    background: linear-gradient(to bottom, rgba(174, 188, 191, 1) 0%, rgb(37, 95, 157) 30%, rgb(41, 143, 41) 50%, rgb(151, 57, 104) 100%);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    z-index: 1;
+}
+
+.options__container {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    width: 100%;
+    margin-left: 50vw;
+    transform: translate(-15%,0);
+    
+    
+}
+
+.container__end {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal__end {
+    height: 25rem;
+    width: 25rem;
+    padding: 20px 0;
+    background-color: rgb(92, 91, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+    text-align: center;
+}
+.score__details {
+    padding-bottom: 20px;
+}
+
+
+.btn__pre,
+.btn__submit,
+.btn__next ,
+.modal__endGame__Btn{
+    outline: none;
+    border: none;
+    padding: 15px 40px;
+    background: linear-gradient(to bottom, rgba(174, 188, 191, 1) 0%, rgb(37, 95, 157) 30%, rgb(41, 143, 41) 50%, rgb(151, 57, 104) 100%);
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    color: white;
+    margin: 20px 20px;
+    transition: transform 0.4s;
+}
+.btn__pre:hover,
+.btn__submit:hover,
+.btn__next:hover {
+    background:  rgb(184, 179, 179) ;
+    transform: scale(1.2);
+}

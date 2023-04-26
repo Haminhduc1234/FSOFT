@@ -1,0 +1,89 @@
+/* General setup */
+@font-face {
+  font-family: customFont;
+  src: url(./fonts/josefinslab-bold-webfont.ttf);
+}
+@font-face {
+  font-family: customFont2;
+  src: url(./fonts/Lovato-Light-webfont.ttf);
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: customFont;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+p {
+  text-indent: 20px;
+}
+nav {
+  float: left;
+  width: 20%;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li{
+  padding: 10px 20px;
+  border: 1px solid #a66 ;
+  text-align: center;
+  margin-bottom: 10px;
+  width: 150px;
+}
+nav li a{
+  text-decoration: none;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+a:visited ,a:focus, a:hover{
+  color: #a66;
+}
+a:hover , a:focus {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slideshow</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+</head>
+
+<body onload="NextQuestion(0)">
+
+    <!-- Start Quiz Btn -->
+    <div class="start__btn__container">
+        <button class="start__btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz End -->
+    <div class="container__end">
+        <div class="modal__end">
+            <h1>Congratulations!</h1>
+            <h2 class="endGame"></h2>
+            <div class="score__details">
+                <p>Score :<span id="player__score"></span> / 10</p>
+                <p>Wrong Answer: <span id="wrong__answer"></span></p>
+                <button class="modal__endGame__Btn" onclick="closeEndGameModal()">Continue</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Container Quiz -->
+    <div class="container">
+        <h1 class="title__container">Javascript Online Quiz</h1>
+        <div class="quiz__container">
+            <div class="quiz__item">
+                <div class="quiz__details">
+                    <h1> Question : <span id="question__number"></span> / 10</h1>
+                </div>
+                <div class="question__container">
+                    <h1 id="question">
+                    </h1>
+                </div>
+                <div class="options__container">
+                    <span>
+                        <input type="radio" name="option" id="option-1" class="radio" value="a">
+                        <label for="option-1" class="option" id="option-1-label"></label>
+                    </span>
+                    <span>
+                        <input type="radio" name="option" id="option-2" class="radio" value="b">
+                        <label for="option-2" class="option" id="option-2-label"></label>
+                    </span>
+                    <span>
+                        <input type="radio" name="option" id="option-3" class="radio" value="c">
+                        <label for="option-3" class="option" id="option-3-label"></label>
+                    </span>
+                    <span>
+                        <input type="radio" name="option" id="option-4" class="radio" value="d">
+                        <label for="option-4" class="option" id="option-4-label"></label>
+                    </span>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Btn Group -->
+    <div class="btn-group">
+        <button class="btn__pre hide ">Previous Question</button>
+        <button class="btn__next hide">Next Question</button>
+        <button class="btn__submit hide">Submit Question</button>
+    </div>
+
+</body>
+
+</html>

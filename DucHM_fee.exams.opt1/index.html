@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <link rel="stylesheet" href="./assets/style/reset.css">
+    <script src="./index.js" defer></script>
+    <title>F</title>
+</head>
+
+<body>
+    <table class="table table-bordered">
+        <thead>
+            <tr class=" cart-rows text-center">
+                <th>Product</th>
+                <th>Description</th>
+                <th>Quantity/Update</th>
+                <th>Price</th>
+                <th>Discount</th>
+                <th>Tax</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="cart-rows text-center">
+                <td class="image">
+                    <img src="./assets/1578803620-103-o-cung-hdd-desktop-6tb-western-digital-wd-purple-chuyen-camera-3.jpg" alt="" style="width: 100px">
+                </td>
+                <td class="desc">
+                    <h3>
+                        MASSA AST
+                    </h3>
+                    <p>
+                        Color : black,Material : metal
+                    </p>
+                </td>
+                <td class="input__Update">
+                    <div class="container__update">
+                        <input class="quanlity" type="text" name="amount" value='0'>
+                        <input type="button" value="-" class="px-2 qtyminus" id="pop">
+                        <input type="button" value="+" class="px-2 qtyplus" id="push">
+                        <button class="px-2" id="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </td>
+                <td class="price"><span>$</span><span class="price__X">120.00</span></td>
+                <td class="discount"><span>$</span><span class="discount_X">25.00</span></td>
+                <td class="sumTax__Container"></td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cart-rows text-center">
+                <td class="image">
+                    <img src="./assets/8eb8515dfe78a152717cdf828fd85300.jpg" alt="" style="width: 100px">
+                </td>
+                <td class="desc">
+                    <h3>
+                        MASSA AST
+                    </h3>
+                    <p>
+                        Color : black,Material : metal
+                    </p>
+                </td>
+                <td class="input__Update">
+                    <div class="container__update">
+                        <input class="quanlity" type="text" name="amount" value='0'>
+                        <input type="button" value="-" class="px-2 qtyminus" id="pop">
+                        <input type="button" value="+" class="px-2 qtyplus" id="push">
+                        <button class="px-2" id="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </td>
+                <td class="price"><span>$</span><span class="price__X">7.00</span></td>
+                <td><span class="discount_X">0</span></td>
+                <td class="sumTax__Container"></td>
+                <td class="total"></td>
+            </tr>
+            <tr class=" cart-rows text-center">
+                <td>
+                    <img src="./assets/may-anh-sony-alpha-a6100-bac-2.jpg" alt="" style="width: 100px">
+                </td>
+                <td class="desc">
+                    <h3>
+                        MASSA AST
+                    </h3>
+                    <p>
+                        Color : black,Material : metal
+                    </p>
+                </td>
+                <td class="input__Update">
+                    <div class="container__update">
+                        <input class="quanlity" type="text" name="amount" value='0'>
+                        <input type="button" value="-" class="px-2 qtyminus" id="pop">
+                        <input type="button" value="+" class="px-2 qtyplus" id="push">
+                        <button class="px-2" id="delete"><i class="fa fa-remove"></i></button>
+                    </div>
+                </td>
+                <td class="price"><span>$</span><span class="price__X">120.00</span></td>
+                <td><span>$</span><span class="discount_X">25.00</span></td>
+                <td class="sumTax__Container"></td>
+                <td class="total"></td>
+            </tr>
+            <tr class="cart-rows text-center">
+                <td colspan="6" class="text-end">Total Price :</td>
+                <td>
+                    <div class="total__Price"></div>
+                </td>
+            </tr>
+            <tr class="cart-rows text-center">
+                <td colspan="6" class="text-end">Total Discount :</td>
+                <td>
+                    <div class="total__Discount"></div>
+                </td>
+            </tr>
+            <tr class="cart-rows text-center">
+                <td colspan="6" class="text-end">Total Tax :</td>
+                <td>
+                    <div class="total__Tax"></div>
+                </td>
+            </tr>                
+
+        </tbody>
+
+    </table>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+
+</html>
